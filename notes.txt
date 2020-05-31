@@ -3,3 +3,10 @@ run
     ncu -u
     npm install
 update 'engine' in package.json
+
+TO DEPLOY:
+test: 
+    heroku local web
+heroku login
+heroku create
+git push heroku master
