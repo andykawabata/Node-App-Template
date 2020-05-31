@@ -1,0 +1,5 @@
+Before Deploy:
+run
+    ncu -u
+    npm install
+update 'engine' in package.json
