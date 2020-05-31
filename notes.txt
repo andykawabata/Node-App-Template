@@ -1,4 +1,7 @@
-Before Deploy:
+
+AFTER DOWNLOAD:
+change project folder name
+change 'name' in package.json
 run
     ncu -u
     npm install
@@ -9,4 +12,4 @@ test:
     heroku local web
 heroku login
 heroku create
-git push heroku master
+git push heroku mastergit a
