@@ -10,7 +10,7 @@ TO DEPLOY:
 test: 
     heroku local web
 heroku login
-heroku create
+heroku create <app name> (app name will appear in url)
 git push heroku mastergit a
 
 AFTER DEPLOY:
