@@ -5,14 +5,16 @@ const fetch = require("node-fetch");
 app.set('view engine', 'ejs');
 app.listen(process.env.PORT || 8080, ()=>console.log("listening..."))
 
-//let enviornmentVariable = process.env.VARNAME
+let enviornmentVariable = process.env.VARNAME
 let todo; 
 
 fetch('https://jsonplaceholder.typicode.com/todos/1')
   .then(response => response.json())
   .then(json => todo = json)
 
-
+  app.get('/env', function(req, res){
+    res.send(enviornmentVariable)
+});
 
 
 app.get('/', function(req, res){
